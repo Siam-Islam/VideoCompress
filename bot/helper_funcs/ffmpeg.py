@@ -46,11 +46,11 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
       "-i",
       video_file,
       "-c:v", 
-      "libx265",
+      "libvpx-vp9",
       "-preset", 
-      "ultrafast",
+      "faster",
       "-crf",
-      "21",
+      "25",
       out_put_file_name
     ]
     if not isAuto:
